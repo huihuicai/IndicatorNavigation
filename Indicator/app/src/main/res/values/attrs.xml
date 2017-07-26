@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="indicator_color" format="reference|color|integer" />
+    <attr name="indicator_height" format="dimension|integer" />
+    <declare-styleable name="Indicator">
+        <attr name="max_visible" format="integer" />
+        <attr name="indicator_color" />
+        <attr name="indicator_height" />
+        <attr name="indicator_width" format="dimension|integer" />
+        <attr name="tab_padding" format="dimension|integer" />
+        <attr name="tab_text_size" format="dimension|integer" />
+        <attr name="text_selected_color" format="color|reference" />
+        <attr name="text_unselect_color" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="selector">
+        <attr name="indicator_color" />
+        <attr name="indicator_height" />
+        <attr name="selected_color" format="reference|color|integer" />
+        <attr name="default_color" format="reference|color|integer" />
+        <attr name="tab_margin" format="dimension|integer" />
+        <attr name="text_size" format="dimension|integer" />
+        <attr name="default_text" format="string|reference" />
+    </declare-styleable>
+</resources>

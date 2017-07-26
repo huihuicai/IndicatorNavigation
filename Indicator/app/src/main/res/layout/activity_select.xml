@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huihuicai.wynne.indicator.view.MultiTreeSelector
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:default_color="0xff484848"
+        app:default_text="请选择"
+        app:indicator_color="0xff0034ff"
+        app:indicator_height="4dp"
+        app:selected_color="0xff0034ff"
+        app:tab_margin="10dp"
+        app:text_size="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

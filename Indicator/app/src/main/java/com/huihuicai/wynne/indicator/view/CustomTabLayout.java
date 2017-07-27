@@ -72,7 +72,7 @@ public class CustomTabLayout extends LinearLayout {
         mIndicatorColor = ta.getColor(R.styleable.Indicator_indicator_color, Color.BLACK);
         mIndicatorWidth = ta.getDimensionPixelSize(R.styleable.Indicator_indicator_width, 50);
         mIndicatorHeight = ta.getDimensionPixelSize(R.styleable.Indicator_indicator_height, 10);
-        mTabPadding = ta.getDimensionPixelSize(R.styleable.Indicator_tab_padding, 16);
+        mTabPadding = ta.getDimensionPixelSize(R.styleable.Indicator_tab_padding, 20);
         mTextSize = ta.getDimensionPixelSize(R.styleable.Indicator_tab_text_size, 16);
         mSelectedColor = ta.getColor(R.styleable.Indicator_text_selected_color, Color.RED);
         mUnselectColor = ta.getColor(R.styleable.Indicator_text_unselect_color, Color.BLACK);
@@ -232,6 +232,9 @@ public class CustomTabLayout extends LinearLayout {
         invalidate();
     }
 
+    /**
+     * 重绘indicator，也可用属性动画的方式
+     */
     @Override
     protected void dispatchDraw(Canvas canvas) {
         canvas.drawLine(0, getHeight(), getWidth() + mOffset, getHeight(), mPaint);

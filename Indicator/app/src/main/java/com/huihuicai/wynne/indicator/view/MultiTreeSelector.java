@@ -115,7 +115,7 @@ public class MultiTreeSelector extends LinearLayout implements View.OnClickListe
             tv.setTextColor(mUnSelectedColor);
         }
         if (mListener != null) {
-            mListener.select(mCurrentTab);
+            mListener.select(true,mCurrentTab);
         }
     }
 
@@ -210,8 +210,6 @@ public class MultiTreeSelector extends LinearLayout implements View.OnClickListe
     @Override
     protected void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
-        Log.e("dispatchDraw", "left:" + getLeft());
-
         canvas.drawLine(0, getMeasuredHeight(), getMeasuredWidth(), getMeasuredHeight(), mPaint);
         int count = canvas.save();
         canvas.drawRect(mIndicatorStart, getMeasuredHeight() - mIndicatorHeight,
@@ -227,11 +225,11 @@ public class MultiTreeSelector extends LinearLayout implements View.OnClickListe
         }
         selectTab(position);
         if (mListener != null) {
-            mListener.select(mCurrentTab);
+            mListener.select(false,mCurrentTab);
         }
     }
 
     public interface SelectListener {
-        void select(int level);
+        void select(boolean isCreate,int level);
     }
 }

@@ -1,5 +1,6 @@
 package com.huihuicai.wynne.indicator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void navigation(View view) {
-
+        startActivity(new Intent(this, TabPagerActivity.class));
     }
 
     public void select(View view) {
-
+        startActivity(new Intent(this, SelectActivity.class));
     }
 }

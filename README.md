@@ -6,5 +6,4 @@
 效果：  
 
 ![仿TabLayout](https://github.com/huihuicai/IndicatorNavigation/blob/master/Indicator/art/xiaoguo.gif)  
-
-![水平多级tab](https://github.com/huihuicai/IndicatorNavigation/blob/master/Indicator/art/xiaoguo2.gif)
+![水平多级tab](https://github.com/huihuicai/IndicatorNavigation/blob/master/Indicator/art/xaioguo2.gif)
